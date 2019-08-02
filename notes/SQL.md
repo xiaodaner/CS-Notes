@@ -30,7 +30,7 @@
 
 模式定义了数据如何存储、存储什么样的数据以及数据如何分解等信息，数据库和表都有模式。
 
-主键的值不允许修改，也不允许复用（不能使用已经删除的主键值赋给新数据行的主键）。
+主键的值不允许修改，也不允许复用（不能将已经删除的主键值赋给新数据行的主键）。
 
 SQL（Structured Query Language)，标准 SQL 由 ANSI 标准委员会管理，从而称为 ANSI SQL。各个 DBMS 都有自己的实现，如 PL/SQL、Transact-SQL 等。
 
@@ -57,10 +57,15 @@ USE test;
 
 ```sql
 CREATE TABLE mytable (
+  # int 类型，不为空，自增
   id INT NOT NULL AUTO_INCREMENT,
+  # int 类型，不可为空，默认值为 1，不为空
   col1 INT NOT NULL DEFAULT 1,
+  # 变长字符串类型，最长为 45 个字符，可以为空
   col2 VARCHAR(45) NULL,
+  # 日期类型，可为空
   col3 DATE NULL,
+  # 设置主键为 id
   PRIMARY KEY (`id`));
 ```
 
@@ -268,7 +273,7 @@ FROM mytable;
 
 AVG() 会忽略 NULL 行。
 
-使用 DISTINCT 可以让汇总函数值汇总不同的值。
+使用 DISTINCT 可以汇总不同的值。
 
 ```sql
 SELECT AVG(DISTINCT col1) AS avg_col
@@ -304,23 +309,23 @@ WHERE SOUNDEX(col1) = SOUNDEX('apple')
 
 |函 数 | 说 明|
 | :---: | :---: |
-| AddDate() | 增加一个日期（天、周等）|
-| AddTime() | 增加一个时间（时、分等）|
-| CurDate() | 返回当前日期 |
-| CurTime() | 返回当前时间 |
-| Date() |返回日期时间的日期部分|
-| DateDiff() |计算两个日期之差|
-| Date_Add() |高度灵活的日期运算函数|
-| Date_Format() |返回一个格式化的日期或时间串|
-| Day()| 返回一个日期的天数部分|
-| DayOfWeek() |对于一个日期，返回对应的星期几|
-| Hour() |返回一个时间的小时部分|
-| Minute() |返回一个时间的分钟部分|
-| Month() |返回一个日期的月份部分|
-| Now() |返回当前日期和时间|
-| Second() |返回一个时间的秒部分|
-| Time() |返回一个日期时间的时间部分|
-| Year() |返回一个日期的年份部分|
+| ADDDATE() | 增加一个日期（天、周等）|
+| ADDTIME() | 增加一个时间（时、分等）|
+| CURDATE() | 返回当前日期 |
+| CURTIME() | 返回当前时间 |
+| DATE() |返回日期时间的日期部分|
+| DATEDIFF() |计算两个日期之差|
+| DATE_ADD() |高度灵活的日期运算函数|
+| DATE_FORMAT() |返回一个格式化的日期或时间串|
+| DAY()| 返回一个日期的天数部分|
+| DAYOFWEEK() |对于一个日期，返回对应的星期几|
+| HOUR() |返回一个时间的小时部分|
+| MINUTE() |返回一个时间的分钟部分|
+| MONTH() |返回一个日期的月份部分|
+| NOW() |返回当前日期和时间|
+| SECOND() |返回一个时间的秒部分|
+| TIME() |返回一个日期时间的时间部分|
+| YEAR() |返回一个日期的年份部分|
 
 ```sql
 mysql> SELECT NOW();
@@ -346,7 +351,7 @@ mysql> SELECT NOW();
 
 # 十三、分组
 
-分组就是把具有相同的数据值的行放在同一组中。
+把具有相同的数据值的行放在同一组中。
 
 可以对同一分组数据使用汇总函数进行处理，例如求分组数据的平均值等。
 
@@ -433,8 +438,6 @@ SELECT A.value, B.value
 FROM tablea AS A, tableb AS B
 WHERE A.key = B.key;
 ```
-
-在没有条件语句的情况下返回笛卡尔积。
 
 ## 自连接
 
@@ -660,7 +663,7 @@ MySQL 不允许在触发器中使用 CALL 语句，也就是不能调用存储�
 
 MySQL 的事务提交默认是隐式提交，每执行一条语句就把这条语句当成一个事务然后进行提交。当出现 START TRANSACTION 语句时，会关闭隐式提交；当 COMMIT 或 ROLLBACK 语句执行后，事务会自动关闭，重新恢复隐式提交。
 
-通过设置 autocommit 为 0 可以取消自动提交；autocommit 标记是针对每个连接而不是针对服务器的。
+设置 autocommit 为 0 可以取消自动提交；autocommit 标记是针对每个连接而不是针对服务器的。
 
 如果没有设置保留点，ROLLBACK 会回退到 START TRANSACTION 语句处；如果设置了保留点，并且在 ROLLBACK 中指定该保留点，则会回退到该保留点。
 
@@ -718,7 +721,7 @@ CREATE USER myuser IDENTIFIED BY 'mypassword';
 **修改账户名** 
 
 ```sql
-RENAME myuser TO newuser;
+RENAME USER myuser TO newuser;
 ```
 
 **删除账户** 
@@ -757,7 +760,7 @@ REVOKE SELECT, INSERT ON mydatabase.* FROM myuser;
 
 **更改密码** 
 
-必须使用 Password() 函数
+必须使用 Password() 函数进行加密。
 
 ```sql
 SET PASSWROD FOR myuser = Password('new_password');
@@ -770,5 +773,10 @@ SET PASSWROD FOR myuser = Password('new_password');
 
 
 
-</br><div align="center">🎨️欢迎关注我的公众号 CyC2018，在公众号后台回复关键字 **资料** 可领取复习大纲，这份大纲是我花了一整年时间整理的面试知识点列表，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点。可以说我基本是按照这份大纲来进行复习的，这份大纲对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据大纲上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。</div></br>
-<div align="center"><img width="180px" src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
+# 微信公众号
+
+
+更多精彩内容将发布在微信公众号 CyC2018 上，你也可以在公众号后台和我交流学习和求职相关的问题。另外，公众号提供了该项目的 PDF 等离线阅读版本，后台回复 "下载" 即可领取。公众号也提供了一份技术面试复习大纲，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点，后台回复 "大纲" 即可领取。我基本是按照这个大纲来进行复习的，对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据大纲上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。
+
+
+<br><div align="center"><img width="320px" src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/other/公众号海报6.png"></img></div>

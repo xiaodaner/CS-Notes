@@ -1,45 +1,42 @@
 <!-- GFM-TOC -->
 * [斐波那契数列](#斐波那契数列)
-    * [爬楼梯](#爬楼梯)
-    * [强盗抢劫](#强盗抢劫)
-    * [强盗在环形街区抢劫](#强盗在环形街区抢劫)
-    * [信件错排](#信件错排)
-    * [母牛生产](#母牛生产)
+    * [1. 爬楼梯](#1-爬楼梯)
+    * [2. 强盗抢劫](#2-强盗抢劫)
+    * [3. 强盗在环形街区抢劫](#3-强盗在环形街区抢劫)
+    * [4. 信件错排](#4-信件错排)
+    * [5. 母牛生产](#5-母牛生产)
 * [矩阵路径](#矩阵路径)
-    * [矩阵的最小路径和](#矩阵的最小路径和)
-    * [矩阵的总路径数](#矩阵的总路径数)
+    * [1. 矩阵的最小路径和](#1-矩阵的最小路径和)
+    * [2. 矩阵的总路径数](#2-矩阵的总路径数)
 * [数组区间](#数组区间)
-    * [数组区间和](#数组区间和)
-    * [数组中等差递增子区间的个数](#数组中等差递增子区间的个数)
+    * [1. 数组区间和](#1-数组区间和)
+    * [2. 数组中等差递增子区间的个数](#2-数组中等差递增子区间的个数)
 * [分割整数](#分割整数)
-    * [分割整数的最大乘积](#分割整数的最大乘积)
-    * [按平方数来分割整数](#按平方数来分割整数)
-    * [分割整数构成字母字符串](#分割整数构成字母字符串)
+    * [1. 分割整数的最大乘积](#1-分割整数的最大乘积)
+    * [2. 按平方数来分割整数](#2-按平方数来分割整数)
+    * [3. 分割整数构成字母字符串](#3-分割整数构成字母字符串)
 * [最长递增子序列](#最长递增子序列)
-    * [最长递增子序列](#最长递增子序列)
-    * [一组整数对能够构成的最长链](#一组整数对能够构成的最长链)
-    * [最长摆动子序列](#最长摆动子序列)
+    * [1. 最长递增子序列](#1-最长递增子序列)
+    * [2. 一组整数对能够构成的最长链](#2-一组整数对能够构成的最长链)
+    * [3. 最长摆动子序列](#3-最长摆动子序列)
 * [最长公共子序列](#最长公共子序列)
 * [0-1 背包](#0-1-背包)
-    * [空间优化](#空间优化)
-    * [无法使用贪心算法的解释](#无法使用贪心算法的解释)
-    * [变种](#变种)
-    * [划分数组为和相等的两部分](#划分数组为和相等的两部分)
-    * [改变一组数的正负号使得它们的和为一给定数](#改变一组数的正负号使得它们的和为一给定数)
-    * [01 字符构成最多的字符串](#01-字符构成最多的字符串)
-    * [找零钱的最少硬币数](#找零钱的最少硬币数)
-    * [找零钱的硬币数组合](#找零钱的硬币数组合)
-    * [字符串按单词列表分割](#字符串按单词列表分割)
-    * [组合总和](#组合总和)
+    * [1. 划分数组为和相等的两部分](#1-划分数组为和相等的两部分)
+    * [2. 改变一组数的正负号使得它们的和为一给定数](#2-改变一组数的正负号使得它们的和为一给定数)
+    * [3. 01 字符构成最多的字符串](#3-01-字符构成最多的字符串)
+    * [4. 找零钱的最少硬币数](#4-找零钱的最少硬币数)
+    * [5. 找零钱的硬币数组合](#5-找零钱的硬币数组合)
+    * [6. 字符串按单词列表分割](#6-字符串按单词列表分割)
+    * [7. 组合总和](#7-组合总和)
 * [股票交易](#股票交易)
-    * [需要冷却期的股票交易](#需要冷却期的股票交易)
-    * [需要交易费用的股票交易](#需要交易费用的股票交易)
-    * [只能进行两次的股票交易](#只能进行两次的股票交易)
-    * [只能进行 k 次的股票交易](#只能进行-k-次的股票交易)
+    * [1. 需要冷却期的股票交易](#1-需要冷却期的股票交易)
+    * [2. 需要交易费用的股票交易](#2-需要交易费用的股票交易)
+    * [3. 只能进行两次的股票交易](#3-只能进行两次的股票交易)
+    * [4. 只能进行 k 次的股票交易](#4-只能进行-k-次的股票交易)
 * [字符串编辑](#字符串编辑)
-    * [删除两个字符串的字符使它们相等](#删除两个字符串的字符使它们相等)
-    * [编辑距离](#编辑距离)
-    * [复制粘贴字符](#复制粘贴字符)
+    * [1. 删除两个字符串的字符使它们相等](#1-删除两个字符串的字符使它们相等)
+    * [2. 编辑距离](#2-编辑距离)
+    * [3. 复制粘贴字符](#3-复制粘贴字符)
 <!-- GFM-TOC -->
 
 
@@ -47,7 +44,7 @@
 
 # 斐波那契数列
 
-## 爬楼梯
+## 1. 爬楼梯
 
 [70. Climbing Stairs (Easy)](https://leetcode.com/problems/climbing-stairs/description/)
 
@@ -59,8 +56,7 @@
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[i]=dp[i-1]+dp[i-2]" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="pics/14fe1e71-8518-458f-a220-116003061a83.png"/> </div><br>
-
+<div align="center"> <img src="pics/14fe1e71-8518-458f-a220-116003061a83.png" width="200px"> </div><br>
 
 考虑到 dp[i] 只与 dp[i - 1] 和 dp[i - 2] 有关，因此可以只用两个变量来存储 dp[i - 1] 和 dp[i - 2]，使得原来的 O(N) 空间复杂度优化为 O(1) 复杂度。
 
@@ -79,7 +75,7 @@ public int climbStairs(int n) {
 }
 ```
 
-## 强盗抢劫
+## 2. 强盗抢劫
 
 [198. House Robber (Easy)](https://leetcode.com/problems/house-robber/description/)
 
@@ -91,7 +87,7 @@ public int climbStairs(int n) {
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[i]=max(dp[i-2]+nums[i],dp[i-1])" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="pics/2de794ca-aa7b-48f3-a556-a0e2708cb976.jpg"/> </div><br>
+<div align="center"> <img src="pics/2de794ca-aa7b-48f3-a556-a0e2708cb976.jpg" width="350px"> </div><br>
 
 ```java
 public int rob(int[] nums) {
@@ -105,12 +101,12 @@ public int rob(int[] nums) {
 }
 ```
 
-## 强盗在环形街区抢劫
+## 3. 强盗在环形街区抢劫
 
 [213. House Robber II (Medium)](https://leetcode.com/problems/house-robber-ii/description/)
 
 ```java
-public  int rob(int[] nums) {
+public int rob(int[] nums) {
     if (nums == null || nums.length == 0) {
         return 0;
     }
@@ -121,7 +117,7 @@ public  int rob(int[] nums) {
     return Math.max(rob(nums, 0, n - 2), rob(nums, 1, n - 1));
 }
 
-private   int rob(int[] nums, int first, int last) {
+private int rob(int[] nums, int first, int last) {
     int pre2 = 0, pre1 = 0;
     for (int i = first; i <= last; i++) {
         int cur = Math.max(pre1, pre2 + nums[i]);
@@ -132,7 +128,7 @@ private   int rob(int[] nums, int first, int last) {
 }
 ```
 
-## 信件错排
+## 4. 信件错排
 
 题目描述：有 N 个 信 和 信封，它们被打乱，求错误装信方式的数量。
 
@@ -145,9 +141,9 @@ private   int rob(int[] nums, int first, int last) {
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[i]=(i-1)*dp[i-2]+(i-1)*dp[i-1]" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="pics/da1f96b9-fd4d-44ca-8925-fb14c5733388.png"/> </div><br>
+<div align="center"> <img src="pics/da1f96b9-fd4d-44ca-8925-fb14c5733388.png" width="350px"> </div><br>
 
-## 母牛生产
+## 5. 母牛生产
 
 [程序员代码面试指南-P181](#)
 
@@ -157,11 +153,11 @@ private   int rob(int[] nums, int first, int last) {
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[i]=dp[i-1]+dp[i-3]" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="pics/879814ee-48b5-4bcb-86f5-dcc400cb81ad.png"/> </div><br>
+<div align="center"> <img src="pics/879814ee-48b5-4bcb-86f5-dcc400cb81ad.png" width="250px"> </div><br>
 
 # 矩阵路径
 
-## 矩阵的最小路径和
+## 1. 矩阵的最小路径和
 
 [64. Minimum Path Sum (Medium)](https://leetcode.com/problems/minimum-path-sum/description/)
 
@@ -197,13 +193,13 @@ public int minPathSum(int[][] grid) {
 }
 ```
 
-## 矩阵的总路径数
+## 2. 矩阵的总路径数
 
 [62. Unique Paths (Medium)](https://leetcode.com/problems/unique-paths/description/)
 
 题目描述：统计从矩阵左上角到右下角的路径总数，每次只能向右或者向下移动。
 
-<div align="center"> <img src="pics/dc82f0f3-c1d4-4ac8-90ac-d5b32a9bd75a.jpg"/> </div><br>
+<div align="center"> <img src="pics/dc82f0f3-c1d4-4ac8-90ac-d5b32a9bd75a.jpg" width=""> </div><br>
 
 ```java
 public int uniquePaths(int m, int n) {
@@ -234,7 +230,7 @@ public int uniquePaths(int m, int n) {
 
 # 数组区间
 
-## 数组区间和
+## 1. 数组区间和
 
 [303. Range Sum Query - Immutable (Easy)](https://leetcode.com/problems/range-sum-query-immutable/description/)
 
@@ -266,18 +262,42 @@ class NumArray {
 }
 ```
 
-## 数组中等差递增子区间的个数
+## 2. 数组中等差递增子区间的个数
 
 [413. Arithmetic Slices (Medium)](https://leetcode.com/problems/arithmetic-slices/description/)
 
 ```html
-A = [1, 2, 3, 4]
-return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
+A = [0, 1, 2, 3, 4]
+
+return: 6, for 3 arithmetic slices in A:
+
+[0, 1, 2],
+[1, 2, 3],
+[0, 1, 2, 3],
+[0, 1, 2, 3, 4],
+[ 1, 2, 3, 4],
+[2, 3, 4]
 ```
 
 dp[i] 表示以 A[i] 为结尾的等差递增子区间的个数。
 
-在 A[i] - A[i - 1] == A[i - 1] - A[i - 2] 的条件下，{A[i - 2], A[i - 1], A[i]} 是一个等差递增子区间。如果 {A[i - 3], A[i - 2], A[i - 1]} 是一个等差递增子区间，那么 {A[i - 3], A[i - 2], A[i - 1], A[i]} 也是等差递增子区间，dp[i] = dp[i-1] + 1。
+当 A[i] - A[i-1] == A[i-1] - A[i-2]，那么 [A[i-2], A[i-1], A[i]] 构成一个等差递增子区间。而且在以 A[i-1] 为结尾的递增子区间的后面再加上一个 A[i]，一样可以构成新的递增子区间。
+
+```html
+dp[2] = 1
+    [0, 1, 2]
+dp[3] = dp[2] + 1 = 2
+    [0, 1, 2, 3], // [0, 1, 2] 之后加一个 3
+    [1, 2, 3]     // 新的递增子区间
+dp[4] = dp[3] + 1 = 3
+    [0, 1, 2, 3, 4], // [0, 1, 2, 3] 之后加一个 4
+    [1, 2, 3, 4],    // [1, 2, 3] 之后加一个 4
+    [2, 3, 4]        // 新的递增子区间
+```
+
+综上，在 A[i] - A[i-1] == A[i-1] - A[i-2] 时，dp[i] = dp[i-1] + 1。
+
+因为递增子区间不一定以最后一个元素为结尾，可以是任意一个元素结尾，因此需要返回 dp 数组累加的结果。
 
 ```java
 public int numberOfArithmeticSlices(int[] A) {
@@ -301,7 +321,7 @@ public int numberOfArithmeticSlices(int[] A) {
 
 # 分割整数
 
-## 分割整数的最大乘积
+## 1. 分割整数的最大乘积
 
 [343. Integer Break (Medim)](https://leetcode.com/problems/integer-break/description/)
 
@@ -320,7 +340,7 @@ public int integerBreak(int n) {
 }
 ```
 
-## 按平方数来分割整数
+## 2. 按平方数来分割整数
 
 [279. Perfect Squares(Medium)](https://leetcode.com/problems/perfect-squares/description/)
 
@@ -356,7 +376,7 @@ private List<Integer> generateSquareList(int n) {
 }
 ```
 
-## 分割整数构成字母字符串
+## 3. 分割整数构成字母字符串
 
 [91. Decode Ways (Medium)](https://leetcode.com/problems/decode-ways/description/)
 
@@ -400,11 +420,11 @@ public int numDecodings(String s) {
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[n]=max\{1,dp[i]+1|S_i<S_n\&\&i<n\}" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="pics/ee994da4-0fc7-443d-ac56-c08caf00a204.jpg"/> </div><br>
+<div align="center"> <img src="pics/ee994da4-0fc7-443d-ac56-c08caf00a204.jpg" width="350px"> </div><br>
 
 对于一个长度为 N 的序列，最长递增子序列并不一定会以 S<sub>N</sub> 为结尾，因此 dp[N] 不是序列的最长递增子序列的长度，需要遍历 dp 数组找出最大值才是所要的结果，max{ dp[i] | 1 <= i <= N} 即为所求。
 
-## 最长递增子序列
+## 1. 最长递增子序列
 
 [300. Longest Increasing Subsequence (Medium)](https://leetcode.com/problems/longest-increasing-subsequence/description/)
 
@@ -486,7 +506,7 @@ private int binarySearch(int[] tails, int len, int key) {
 }
 ```
 
-## 一组整数对能够构成的最长链
+## 2. 一组整数对能够构成的最长链
 
 [646. Maximum Length of Pair Chain (Medium)](https://leetcode.com/problems/maximum-length-of-pair-chain/description/)
 
@@ -518,7 +538,7 @@ public int findLongestChain(int[][] pairs) {
 }
 ```
 
-## 最长摆动子序列
+## 3. 最长摆动子序列
 
 [376. Wiggle Subsequence (Medium)](https://leetcode.com/problems/wiggle-subsequence/description/)
 
@@ -567,7 +587,7 @@ public int wiggleMaxLength(int[] nums) {
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[i][j]=\left\{\begin{array}{rcl}dp[i-1][j-1]&&{S1_i==S2_j}\\max(dp[i-1][j],dp[i][j-1])&&{S1_i<>S2_j}\end{array}\right." class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="pics/ecd89a22-c075-4716-8423-e0ba89230e9a.jpg"/> </div><br>
+<div align="center"> <img src="pics/ecd89a22-c075-4716-8423-e0ba89230e9a.jpg" width="450px"> </div><br>
 
 对于长度为 N 的序列 S<sub>1</sub> 和长度为 M 的序列 S<sub>2</sub>，dp[N][M] 就是序列 S<sub>1</sub> 和序列 S<sub>2</sub> 的最长公共子序列长度。
 
@@ -607,9 +627,13 @@ public int lengthOfLCS(int[] nums1, int[] nums2) {
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[i][j]=max(dp[i-1][j],dp[i-1][j-w]+v)" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="pics/8cb2be66-3d47-41ba-b55b-319fc68940d4.png"/> </div><br>
+<div align="center"> <img src="pics/8cb2be66-3d47-41ba-b55b-319fc68940d4.png" width="400px"> </div><br>
 
 ```java
+// W 为背包总体积
+// N 为物品数量
+// weights 数组存储 N 个物品的重量
+// values 数组存储 N 个物品的价值
 public int knapsack(int W, int N, int[] weights, int[] values) {
     int[][] dp = new int[N + 1][W + 1];
     for (int i = 1; i <= N; i++) {
@@ -626,15 +650,15 @@ public int knapsack(int W, int N, int[] weights, int[] values) {
 }
 ```
 
-## 空间优化
+**空间优化** 
 
 在程序实现时可以对 0-1 背包做优化。观察状态转移方程可以知道，前 i 件物品的状态仅与前 i-1 件物品的状态有关，因此可以将 dp 定义为一维数组，其中 dp[j] 既可以表示 dp[i-1][j] 也可以表示 dp[i][j]。此时，
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[j]=max(dp[j],dp[j-w]+v)" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="pics/9ae89f16-7905-4a6f-88a2-874b4cac91f4.jpg"/> </div><br>
+<div align="center"> <img src="pics/9ae89f16-7905-4a6f-88a2-874b4cac91f4.jpg" width="300px"> </div><br>
 
-因为 dp[j-w] 表示 dp[i-1][j-w]，因此不能先求 dp[i][j-w]，以防将 dp[i-1][j-w] 覆盖。也就是说要先计算 dp[i][j] 再计算 dp[i][j-w]，在程序实现时需要按倒序来循环求解。
+因为 dp[j-w] 表示 dp[i-1][j-w]，因此不能先求 dp[i][j-w]，防止将 dp[i-1][j-w] 覆盖。也就是说要先计算 dp[i][j] 再计算 dp[i][j-w]，在程序实现时需要按倒序来循环求解。
 
 ```java
 public int knapsack(int W, int N, int[] weights, int[] values) {
@@ -651,7 +675,7 @@ public int knapsack(int W, int N, int[] weights, int[] values) {
 }
 ```
 
-## 无法使用贪心算法的解释
+**无法使用贪心算法的解释** 
 
 0-1 背包问题无法使用贪心算法来求解，也就是说不能按照先添加性价比最高的物品来达到最优，这是因为这种方式可能造成背包空间的浪费，从而无法达到最优。考虑下面的物品和一个容量为 5 的背包，如果先添加物品 0 再添加物品 1，那么只能存放的价值为 16，浪费了大小为 2 的空间。最优的方式是存放物品 1 和物品 2，价值为 22.
 
@@ -661,7 +685,7 @@ public int knapsack(int W, int N, int[] weights, int[] values) {
 | 1 | 2 | 10 | 5 |
 | 2 | 3 | 12 | 4 |
 
-## 变种
+**变种** 
 
 - 完全背包：物品数量为无限个
 
@@ -671,7 +695,7 @@ public int knapsack(int W, int N, int[] weights, int[] values) {
 
 - 其它：物品之间相互约束或者依赖
 
-## 划分数组为和相等的两部分
+## 1. 划分数组为和相等的两部分
 
 [416. Partition Equal Subset Sum (Medium)](https://leetcode.com/problems/partition-equal-subset-sum/description/)
 
@@ -711,7 +735,7 @@ private int computeArraySum(int[] nums) {
 }
 ```
 
-## 改变一组数的正负号使得它们的和为一给定数
+## 2. 改变一组数的正负号使得它们的和为一给定数
 
 [494. Target Sum (Medium)](https://leetcode.com/problems/target-sum/description/)
 
@@ -783,7 +807,7 @@ private int findTargetSumWays(int[] nums, int start, int S) {
 }
 ```
 
-## 01 字符构成最多的字符串
+## 3. 01 字符构成最多的字符串
 
 [474. Ones and Zeroes (Medium)](https://leetcode.com/problems/ones-and-zeroes/description/)
 
@@ -821,7 +845,7 @@ public int findMaxForm(String[] strs, int m, int n) {
 }
 ```
 
-## 找零钱的最少硬币数
+## 4. 找零钱的最少硬币数
 
 [322. Coin Change (Medium)](https://leetcode.com/problems/coin-change/description/)
 
@@ -841,7 +865,7 @@ return -1.
 - 物品大小：面额
 - 物品价值：数量
 
-因为硬币可以重复使用，因此这是一个完全背包问题。完全背包只需要将 0-1 背包中逆序遍历 dp 数组改为正序遍历即可。
+因为硬币可以重复使用，因此这是一个完全背包问题。完全背包只需要将 0-1 背包的逆序遍历 dp 数组改为正序遍历即可。
 
 ```java
 public int coinChange(int[] coins, int amount) {
@@ -864,7 +888,7 @@ public int coinChange(int[] coins, int amount) {
 }
 ```
 
-## 找零钱的硬币数组合
+## 5. 找零钱的硬币数组合
 
 [518\. Coin Change 2 (Medium)](https://leetcode.com/problems/coin-change-2/description/)
 
@@ -896,7 +920,7 @@ public int change(int amount, int[] coins) {
 }
 ```
 
-## 字符串按单词列表分割
+## 6. 字符串按单词列表分割
 
 [139. Word Break (Medium)](https://leetcode.com/problems/word-break/description/)
 
@@ -906,9 +930,15 @@ dict = ["leet", "code"].
 Return true because "leetcode" can be segmented as "leet code".
 ```
 
-dict 中的单词没有使用次数的限制，因此这是一个完全背包问题。该问题涉及到字典中单词的使用顺序，因此可理解为涉及顺序的完全背包问题。
+dict 中的单词没有使用次数的限制，因此这是一个完全背包问题。
 
-求解顺序的完全背包问题时，对物品的迭代应该放在最里层。
+该问题涉及到字典中单词的使用顺序，也就是说物品必须按一定顺序放入背包中，例如下面的 dict 就不够组成字符串 "leetcode"：
+
+```html
+["lee", "tc", "cod"]
+```
+
+求解顺序的完全背包问题时，对物品的迭代应该放在最里层，对背包的迭代放在外层，只有这样才能让物品按一定顺序放入背包中。
 
 ```java
 public boolean wordBreak(String s, List<String> wordDict) {
@@ -927,7 +957,7 @@ public boolean wordBreak(String s, List<String> wordDict) {
 }
 ```
 
-## 组合总和
+## 7. 组合总和
 
 [377. Combination Sum IV (Medium)](https://leetcode.com/problems/combination-sum-iv/description/)
 
@@ -970,13 +1000,14 @@ public int combinationSum4(int[] nums, int target) {
 
 # 股票交易
 
-## 需要冷却期的股票交易
+## 1. 需要冷却期的股票交易
 
 [309. Best Time to Buy and Sell Stock with Cooldown(Medium)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/)
 
 题目描述：交易之后需要有一天的冷却时间。
 
 <div align="center"> <img src="pics/83acbb02-872a-4178-b22a-c89c3cb60263.jpg" width="300px"> </div><br>
+
 
 ```java
 public int maxProfit(int[] prices) {
@@ -1000,7 +1031,7 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-## 需要交易费用的股票交易
+## 2. 需要交易费用的股票交易
 
 [714. Best Time to Buy and Sell Stock with Transaction Fee (Medium)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/)
 
@@ -1039,7 +1070,7 @@ public int maxProfit(int[] prices, int fee) {
 ```
 
 
-## 只能进行两次的股票交易
+## 3. 只能进行两次的股票交易
 
 [123. Best Time to Buy and Sell Stock III (Hard)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
 
@@ -1065,7 +1096,7 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-## 只能进行 k 次的股票交易
+## 4. 只能进行 k 次的股票交易
 
 [188. Best Time to Buy and Sell Stock IV (Hard)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/)
 
@@ -1095,7 +1126,7 @@ public int maxProfit(int k, int[] prices) {
 
 # 字符串编辑
 
-## 删除两个字符串的字符使它们相等
+## 1. 删除两个字符串的字符使它们相等
 
 [583. Delete Operation for Two Strings (Medium)](https://leetcode.com/problems/delete-operation-for-two-strings/description/)
 
@@ -1124,7 +1155,7 @@ public int minDistance(String word1, String word2) {
 }
 ```
 
-## 编辑距离
+## 2. 编辑距离
 
 [72. Edit Distance (Hard)](https://leetcode.com/problems/edit-distance/description/)
 
@@ -1177,7 +1208,7 @@ public int minDistance(String word1, String word2) {
 }
 ```
 
-## 复制粘贴字符
+## 3. 复制粘贴字符
 
 [650. 2 Keys Keyboard (Medium)](https://leetcode.com/problems/2-keys-keyboard/description/)
 
@@ -1223,5 +1254,10 @@ public int minSteps(int n) {
 
 
 
-</br><div align="center">🎨️欢迎关注我的公众号 CyC2018，在公众号后台回复关键字 **资料** 可领取复习大纲，这份大纲是我花了一整年时间整理的面试知识点列表，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点。可以说我基本是按照这份大纲来进行复习的，这份大纲对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据大纲上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。</div></br>
-<div align="center"><img width="180px" src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
+# 微信公众号
+
+
+更多精彩内容将发布在微信公众号 CyC2018 上，你也可以在公众号后台和我交流学习和求职相关的问题。另外，公众号提供了该项目的 PDF 等离线阅读版本，后台回复 "下载" 即可领取。公众号也提供了一份技术面试复习大纲，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点，后台回复 "大纲" 即可领取。我基本是按照这个大纲来进行复习的，对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据大纲上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。
+
+
+<br><div align="center"><img width="320px" src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/other/公众号海报6.png"></img></div>
